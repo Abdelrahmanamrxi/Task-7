@@ -1,27 +1,26 @@
+
+
 import 'package:flutter/material.dart';
 
-class Logo extends StatelessWidget {
-  final String url;
-  final String text;
-  const Logo({ super.key,required this.text,required this.url});
+class MyPet extends StatelessWidget {
+
+  const MyPet({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    return  Stack(
-
+    return Stack(
       alignment: Alignment.bottomCenter,
       children: [
         Image.asset(
           height: 100,
+
           width: 100,
           fit: BoxFit.cover,
-          url,
+          "assets/mm.jpg",
         ),
-        Text(text, style: TextStyle(color: Colors.blue, fontSize: 20)),
-      ],
 
+        Text("TTT", style: TextStyle(color: Colors.white, fontSize: 30)),
+      ],
     );
   }
-
 }
